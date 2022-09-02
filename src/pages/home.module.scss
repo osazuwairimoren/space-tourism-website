@@ -1,0 +1,108 @@
+.section {
+    background-image: url("../assets/home/background-home-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+}
+// main container
+.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10rem;
+    margin-left: 3rem;
+}
+.firstCollumn {
+    width: 50%;
+    justify-content: flex-start;
+    color: rgb(143, 153, 167);
+}
+// paragraphs
+.firstParagraph {
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+// main text on page
+.firstCollumn span {
+    color: white;
+    font-size: 9rem;
+    line-height: 4rem;
+    text-transform: uppercase;
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.secondParagraph {
+    margin-top: 3rem;
+}
+.secondCollumn {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+// explore button
+.exploreBtn {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    transition: box-shadow 1s ease;
+    font-size: 1.7rem;
+}
+.exploreBtn:hover {
+    box-shadow: 0px 0px 2px 20px rgb(149, 146, 146);
+    background-color: white;
+}
+// adjustment
+@media screen and (max-width: 830px) {
+    .container {
+        width: 85%;
+    }
+}
+// tablet
+@media screen and (max-width: 809px) {
+    .section {
+        background-image: url("../assets/home/background-home-tablet.jpg");
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        margin-top: 7rem;
+    }
+    .firstCollumn,
+    .secondCollumn {
+        width: 100%;
+    }
+    .firstCollumn {
+        margin-bottom: 4rem;
+        text-align: center;
+    }
+    .firstCollumn span {
+        font-size: 8rem;
+    }
+    .secondCollumn {
+        justify-content: center;
+    }
+}
+// mobile
+@media screen and (max-width: 510px) {
+    .section {
+        background-image: url("../assets/home/background-home-mobile.jpg");
+    }
+    .container {
+        margin-top: 3rem;
+        margin-left: 0;
+    }
+    .firstCollumn span {
+        font-size: 6.2rem;
+    }
+    .exploreBtn {
+        width: 10rem;
+        height: 10rem;
+    }
+}

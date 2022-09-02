@@ -1,0 +1,108 @@
+// * {
+//     outline: 2px solid green;
+// }
+.deskTop {
+    display: flex;
+    justify-content: space-between;
+    transition: width 2s;
+}
+img[alt="logo"] {
+    width: 3rem;
+    height: 3rem;
+}
+.navBar {
+    width: 57%;
+    height: 4rem;
+    background-color: grey;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding: auto;
+    align-items: center;
+}
+li {
+    list-style-type: none;
+    display: inline;
+}
+// acctive page
+.active {
+    border-bottom: 3px solid white;
+}
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding-bottom: 1.2rem;
+    font-size: 0.8rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+// hide on desktop and tablets
+.mobile {
+    display: none;
+    // width: 0;
+    // transition: width 2s ease;
+}
+.mobile .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mobile img[alt="open"] {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-right: 2rem;
+}
+.mainMobileNav {
+    // width: 70%;
+    width: 0;
+    transition: width 0.3s ease;
+    // height: 100%;
+    position: fixed;
+    right: 0;
+    background-color: gray;
+    top: 0;
+    margin: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.7rem;
+    // display: none;
+    height: 0;
+}
+.mainMobileNav li {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.mainMobileNav li a {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+// close button
+img[alt="close"] {
+    margin: auto;
+    display: block;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+// tablets
+@media screen and (max-width: 809px) {
+    .navBar,
+    .blur {
+        padding-left: 0.4rem;
+        padding-right: 0.4rem;
+        width: 75%;
+    }
+}
+// mobile
+@media screen and (max-width: 510px) {
+    .deskTop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+}

@@ -1,0 +1,165 @@
+.section {
+    background-image: url("../assets/crew/background-crew-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+}
+.meet {
+    color: rgb(213, 219, 226);
+    margin-top: 5rem;
+    margin-left: 3.5rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    word-spacing: 8px;
+    font-size: 1.1rem;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+}
+.container {
+    display: flex;
+    color: rgb(213, 219, 226);
+    width: 85%;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-left: 5rem;
+}
+.firstCollumn {
+    width: 59%;
+    margin-top: 4rem;
+}
+.role {
+    color: grey;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+.hugeText {
+    color: white;
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    line-height: 3rem;
+}
+.explain {
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    word-spacing: 3px;
+    width: 80%;
+    margin-bottom: 5rem;
+}
+.tabDiv {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+.tabs {
+    width: 1rem;
+    height: 1rem;
+    background-color: rgb(213, 219, 226);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.active {
+    background-color: white !important;
+}
+.secondCollumn {
+    width: 40%;
+}
+img[alt="a person"] {
+    width: 70%;
+    height: auto;
+    display: block;
+}
+// tablet
+@media screen and (max-width: 809px) {
+    .section {
+        background-image: url("../assets/crew/background-crew-tablet.jpg");
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        margin-right: 3rem;
+        width: 90%;
+    }
+    .firstCollumn {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .hugeText {
+        font-size: 3rem;
+    }
+    .explain {
+        margin-bottom: 6rem;
+    }
+    .secondCollumn {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tabDiv {
+        width: 30%;
+    }
+    .tabs {
+        width: 0.9rem;
+        height: 0.9rem;
+    }
+    .invertDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .role {
+        font-size: 1.4rem;
+    }
+}
+// mobile
+@media screen and (max-width: 510px) {
+    .section {
+        background-image: url("../assets/crew/background-crew-mobile.jpg");
+        padding-left: 1rem;
+    }
+    .meet {
+        margin-left: auto;
+        text-align: center;
+    }
+    .container {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    .firstCollumn {
+        flex-direction: column-reverse;
+    }
+    .invertDiv {
+        flex-direction: column;
+    }
+    .hugeText {
+        text-align: center;
+        font-size: 2rem;
+    }
+    .role {
+        font-size: 1.3rem;
+        margin-top: 2rem;
+    }
+    .tabs {
+        width: 0.7rem;
+        height: 0.7rem;
+    }
+    img[alt="a person"] {
+        width: auto;
+        height: 15rem;
+    }
+    .explain {
+        width: 100%;
+    }
+}
